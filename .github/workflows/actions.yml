@@ -21,9 +21,6 @@ jobs:
       - name: upgrade pip
         run: pip install --upgrade pip
         
-      - name: install python3-brlapi
-        run: sudo apt install python3-brlapi
-        
       - name: Install dependencies
         run: pip install -r requirements.txt
 
