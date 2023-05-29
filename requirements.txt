@@ -32,12 +32,14 @@ oauthlib==3.2.0
 olefile==0.46
 paramiko==2.9.3
 pexpect==4.8.0
+Pillow==9.0.1
 protobuf==3.12.4
 ptyprocess==0.7.0
 pycairo==1.20.1
 pycodestyle==2.8.0
 pycups==2.0.1
 pyflakes==2.4.0
+PyGObject==3.42.1
 PyJWT==2.3.0
 pymacaroons==0.13.0
 PyNaCl==1.5.0
