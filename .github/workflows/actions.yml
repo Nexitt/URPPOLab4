@@ -21,6 +21,9 @@ jobs:
       - name: upgrade pip
         run: pip install --upgrade pip
         
+      - name: install apparmor and apturl
+        run: apt install -y apparmor apturl
+        
       - name: Install dependencies
         run: pip install -r requirements.txt
 
