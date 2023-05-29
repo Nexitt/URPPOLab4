@@ -21,9 +21,6 @@ jobs:
       - name: pip install pip==21.3.1
         run: pip install pip==21.3.1
         
-      - name: pip install PyGObject
-        run: pip install PyGObject
-        
       - name: pip install dbus-next
         run: pip install dbus-next
         
