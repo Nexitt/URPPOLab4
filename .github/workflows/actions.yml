@@ -21,9 +21,6 @@ jobs:
       - name: upgrade pip
         run: pip install --upgrade pip
         
-      - name: install apturl
-        run: pip install apturl
-        
       - name: Install dependencies
         run: pip install -r requirements.txt
 
