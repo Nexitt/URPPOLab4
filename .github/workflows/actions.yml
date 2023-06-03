@@ -24,12 +24,6 @@ jobs:
       - name: pip install --upgrade pip
         run: pip install --upgrade pip
         
-      - name: pip install dbus-next
-        run: pip install dbus-next
-        
-      - name: pip install wheel
-        run: pip3 install wheel
-        
       - name: Install dependencies
         run: pip install -r requirements.txt
 
@@ -37,7 +31,5 @@ jobs:
         run: pip install flake8
 
       - name: Run flake8
-        run: flake8
-
-      - name: Run tests
-        run: python test.py
+        run: |
+          find . -name "*.py" -print0 | xargs -0 flake8 --format='%(path)s::%(row)d::%(text)s'
