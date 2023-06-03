@@ -31,13 +31,7 @@ jobs:
         run: pip install flake8
 
       - name: Run flake8
-        run: |
-          flake8 —exclude=.git
-          RESULT=$?
-          if [ $RESULT -ne 0 ]; then
-          echo "flake8 found errors. Exiting with a failure."
-          exit 1
-          fi
+        run: flake8
 
       - name: Run tests
         run: python test.py
