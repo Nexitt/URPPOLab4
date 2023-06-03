@@ -30,8 +30,8 @@ jobs:
       - name: pip install wheel
         run: pip3 install wheel
         
-      - name: pip install Cmake
-        run: pip install Cmake
+      - name: python setup.py bdist_wheel 
+        run: python setup.py bdist_wheel 
         
       - name: Install dependencies
         run: pip install -r requirements.txt
