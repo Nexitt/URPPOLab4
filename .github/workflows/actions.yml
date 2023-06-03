@@ -24,6 +24,9 @@ jobs:
       - name: pip install dbus-next
         run: pip install dbus-next
         
+      - name: pip install wheel
+        run: pip install wheel
+        
       - name: Install dependencies
         run: pip install -r requirements.txt
 
