@@ -30,9 +30,6 @@ jobs:
       - name: pip install wheel
         run: pip3 install wheel
         
-      - name: pip install Unidecode
-        run: pip install Unidecode
-        
       - name: Install dependencies
         run: pip install -r requirements.txt
 
